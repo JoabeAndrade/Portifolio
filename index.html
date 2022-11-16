@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Portifólio</title>
+</head>
+<body>
+    <header class="caixa">
+        <nav>
+            <h1>Porti<span>fólio</span></h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button type="button">Faça seu orçamento</button>
+        </nav>
+        <div class="presentation">
+            <h3>Olá, meu nome é</h3>
+            <h1>Joabe <span>Andrade</span></h1>
+            <h2>Sou desenvolvedor Front-End</h2>
+        </div>
+    </header>
+
+    <section class="main-1">
+        <div class="sobre-mim" id="sobre-mim">
+            <h1>Sobre <span>Mim</span></h1>
+            <div class="texto-sobre">
+                <h4>Desenvolvedor <span>& Designer</span></h4>
+                <hr/>
+                <p>Olá meu nome é Joabe Andrade, tenho 21 anos, sou estudante no curso de Ciência da Computação na Universidade Estadual de Santa Cruz (UESC). Sou apaixonado por tecnologia, e estou sempre em busca de novos conhecimentos. Sou um desenvolvedor web Front-end, e estou sempre em busca de novos desafios. Procuro minha primeira oportunidade no mercado de trabalho, e estou disposto a aprender e me desenvolver cada vez mais.</p>
+                <hr/>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-2">
+        <div class="habilidades" id="habilidades">
+            <h1>Habili<span>dades</span></h1>
+        </div>
+        <div class="imagens">
+            <img src="./src/img/habilidades.png" alt="habilidades" width="840px">
+        </div>
+    </section>
+
+    <section class="main-3">
+        <div class="text-contato" id="contato">
+            <h1>Con<span>tato</span></h1>
+            <p>Se você tem algum projeto em mente, ou quer apenas conversar, entre em contato comigo.</p>
+        </div>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
