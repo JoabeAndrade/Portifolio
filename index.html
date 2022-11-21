@@ -10,24 +10,97 @@
     <title>Portifólio</title>
 </head>
 <body>
-    <header class="caixa">
-        <nav>
-            <h1>Porti<span>fólio</span></h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#sobre-mim">Sobre Mim</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <button type="button">Faça seu orçamento</button>
-        </nav>
-        <div class="presentation">
-            <h3>Olá, meu nome é</h3>
-            <h1>Joabe <span>Andrade</span></h1>
-            <h2>Sou desenvolvedor Front-End</h2>
-        </div>
+    <header>
+            <div class="logo">
+                <h1>Porti<span class="enfase">fólio</span></h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="btn-mobile">
+                <ion-icon name="grid-outline"></ion-icon>
+            </div>
     </header>
 
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="title">
+                <h2>Olá, meu nome é</h2>
+                <h1>Joabe <span class="enfase">Andrade</span></h1>
+                <h3>Sou developer front end</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>Sobre <span class="enfase">Mim</span></h1>
+                <p>Olá meu nome é Joabe Andrade, sou estudante no curso de Ciência da Computação na Universidade Estadual de Santa Cruz (UESC). Sou um desenvolvedor web Front-end, e estou sempre em busca de novos desafios. Procuro minha primeira oportunidade no mercado de trabalho, e estou disposto a aprender e me desenvolver cada vez mais.</p>
+                
+                <div class="box-title">
+                    <p>90%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+
+                    <p>80%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>CSS</span>
+
+                    <p>87%</p>
+                    <div class="b1"><div class="b4"></div></div>
+                    <span>JavaScript</span>
+
+                    <p>76%</p>
+                    <div class="b1"><div class="b5"></div></div>
+                    <span>Java</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-contact">
+                <div class="contact-left">
+                    <h1>Meios de contato</h1>
+                    <div class="linha"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>joabeandrade2k01@gmail.com</span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+55 73 98213-5571</span>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Bahia,Brasil</span>
+                </div>
+                <div class="contact-right">
+                    <h1>Formulário</h1>
+                    <div class="linha"></div>
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Nome">
+                    <textarea placeholder="Mensagem"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Copyright 2022 <a href="">FRONT</a> Feito por Joabe Andrade</span>
+    </footer>
+<!--
     <section class="main-1">
         <div class="sobre-mim" id="sobre-mim">
             <h1>Sobre <span>Mim</span></h1>
@@ -64,5 +137,16 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
+-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
 </body>
 </html>
